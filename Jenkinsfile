@@ -20,7 +20,6 @@ pipeline {
             steps {
                  sh 'rm -rf node_modules'
                 sh 'npm ci'
-                    sh 'npm install'
                     sh 'npm run build'
             }
         }
@@ -30,7 +29,7 @@ pipeline {
                 sh """
                 ssh -i $SSH_KEY -o StrictHostKeyChecking=no $EC2_USER@$EC2_IP '
                     cd $REMOTE_PATH &&
-                    git pull origin master &&
+                    git pull origin main &&
                     npm install &&
                     npm run build &&
                     pm2 restart my-api || pm2 start dist/server.js --name my-api
