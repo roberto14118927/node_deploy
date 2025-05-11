@@ -5,7 +5,7 @@ pipeline {
         NODE_ENV = 'production'
         EC2_USER = 'ubuntu'
         EC2_IP = '98.81.245.108'
-        REMOTE_PATH = '/home/ubuntu/microservice-healthcheck'
+        REMOTE_PATH = '/home/ubuntu/node_deploy'
         SSH_KEY = credentials('ssh-key-ec2')
     }
 
