@@ -1,0 +1,20 @@
+# Node.js
+node_modules/
+.env
+dist/
+coverage/
+npm-debug.log
+yarn-error.log
+.DS_Store
+
+# TypeScript
+*.tsbuildinfo
+
+# IDEs
+.vscode/
+.idea/
+
+# PM2
+pids
+logs
+*.log
