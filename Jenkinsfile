@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', url: 'https://github.com/TU_USUARIO/TU_REPO.git'
+                git branch: 'master', url: 'https://github.com/roberto14118927/node_deploy.git'
             }
         }
 
